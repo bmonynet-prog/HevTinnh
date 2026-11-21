@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { BarChart3, Boxes, Megaphone, PackageCheck, Settings, Users } from "lucide-react";
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
-import { analytics, products } from "../data/catalog.js";
+import { analytics, products } from "../data/storeData.js";
 
 const stats = [
   ["Total sales", "$392K", BarChart3],

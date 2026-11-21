@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck, Sparkles, Truck } from "lucide-react";
 import { Link } from "react-router-dom";
 import ProductCard from "../components/ProductCard.jsx";
-import { categories, products, testimonials } from "../data/catalog.js";
+import { categories, products, testimonials } from "../data/storeData.js";
 
 export default function HomePage() {
   return (

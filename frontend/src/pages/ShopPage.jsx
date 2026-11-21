@@ -1,7 +1,7 @@
 import { Grid2X2, List, Search } from "lucide-react";
 import { useMemo, useState } from "react";
 import ProductCard from "../components/ProductCard.jsx";
-import { products } from "../data/catalog.js";
+import { products } from "../data/storeData.js";
 
 export default function ShopPage() {
   const [query, setQuery] = useState("");

@@ -2,7 +2,7 @@ import { Heart, ShieldCheck, Star, Truck } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import ProductCard from "../components/ProductCard.jsx";
 import { useCart } from "../context/CartContext.jsx";
-import { products } from "../data/catalog.js";
+import { products } from "../data/storeData.js";
 
 export default function ProductPage() {
   const { id } = useParams();
