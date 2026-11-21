@@ -1,0 +1,98 @@
+.site-header {
+  align-items: center;
+  background: rgba(255, 253, 248, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 18px;
+  grid-template-columns: auto 1fr auto;
+  padding: 16px clamp(18px, 5vw, 72px);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.reset-button {
+  background: transparent;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+}
+
+.brand,
+.nav-links,
+.account-actions {
+  align-items: center;
+  display: flex;
+}
+
+.brand {
+  font-size: 1.15rem;
+  font-weight: 800;
+  gap: 10px;
+}
+
+.brand-mark {
+  background: var(--ink);
+  border-radius: 8px;
+  color: white;
+  display: grid;
+  height: 36px;
+  place-items: center;
+  width: 36px;
+}
+
+.nav-links {
+  color: var(--muted);
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  gap: 16px;
+  justify-content: center;
+}
+
+.nav-links button {
+  color: var(--muted);
+  font-weight: 750;
+}
+
+.nav-links button.active,
+.nav-links button:hover,
+.text-button:hover {
+  color: var(--primary-dark);
+}
+
+.account-actions {
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.text-button {
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.button.small {
+  min-height: 38px;
+  padding: 0 14px;
+}
+
+.ghost-light {
+  background: #eef8f6;
+  color: var(--primary-dark);
+}
+
+@media (max-width: 880px) {
+  .site-header {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links,
+  .account-actions {
+    justify-content: flex-start;
+  }
+}
